@@ -24,12 +24,18 @@ body {
   margin: 0;
 }
 
+header img{
+  position: relative;
+  right: 750px;
+}
+
 
 ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .figures img {
   height: 300px;
@@ -74,10 +80,10 @@ header {
   padding: 20px;
 }
 
-/*nav{
-  display: flex;
-  justify-content: space-around;
-}*/
+nav a{
+  padding: 10px;
+  font-size: 100%;
+}
 
 main {
   background-color: #F2F1E8;
@@ -108,7 +114,7 @@ main {
   background-attachment: fixed;
 }
 
-.facilities{
+.facilities>p, .facilities>h3{
   font-size: 150%;
 }
 
@@ -134,11 +140,33 @@ main {
 }
 
 .tables{
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
+  border-collapse: collapse;
 }
 
 .tables td{
-  border: 2px solid black;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.tables tr:nth-child(even){
+  background-color: moccasin;
+}
+
+.pots{
+  background-image: url("images/optimized/background-2.jpg");
+}
+
+.form{
+  background-color: white;
+  width: 15%;
+  padding: 18%;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+blockquote{
+  font-style: italic;
+  border-left: 5px solid moccasin;
+  margin: 0;
+  padding: 30px;
 }
